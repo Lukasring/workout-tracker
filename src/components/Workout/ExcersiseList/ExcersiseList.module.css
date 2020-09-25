@@ -1,0 +1,17 @@
+.ExcersiseList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ExcersiseList li {
+  margin: 0;
+  padding: 12px;
+  border-bottom: 2px solid blue;
+}
+
+.ExcersiseList li:hover,
+.ExcersiseList li:active {
+  background-color: lightblue;
+  border-bottom: 2px solid rgb(120, 120, 255);
+}

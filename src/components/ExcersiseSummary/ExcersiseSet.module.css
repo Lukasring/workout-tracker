@@ -1,0 +1,11 @@
+.ExcersiseSet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ExcersiseSet p {
+  display: flex;
+  align-items: center;
+  margin: 8px;
+}
