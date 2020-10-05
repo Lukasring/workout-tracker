@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
 // import CreateRoutine from "./components/Routine/CreateRoutine/CreateRoutine";
-// import ExcersiseCard from "./components/ExcersiseSummary/ExcersiseCard";
+import ExcersiseCard from "./components/ExcersiseSummary/ExcersiseCard";
 import ExcersiseTypes from "./components/Workout/ExcersiseTypes/ExcersiseTypes";
 import ExcersiseList from "./components/Workout/ExcersiseList/ExcersiseList";
 import {
@@ -22,6 +22,7 @@ const App = () => {
 
   return (
     <div>
+      <ExcersiseCard />
       {redirectPath && <Redirect to={redirectPath} />}
       <Switch>
         <Route
