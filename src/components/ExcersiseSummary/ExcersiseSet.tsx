@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./ExcersiseSet.module.css";
 
-const ExcersiseSet = (props) => {
+const ExcersiseSet: React.FC = () => {
   return (
     <div className={classes.ExcersiseSet}>
       <p>Set</p>
