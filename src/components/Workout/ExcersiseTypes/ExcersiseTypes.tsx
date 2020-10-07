@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./ExcersiseTypes.module.css";
+import classes from "./ExcersiseTypes.module.scss";
 import { excersiseTypes } from "../Excersises/Excersises";
 
 type Props = {

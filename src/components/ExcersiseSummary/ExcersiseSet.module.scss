@@ -1,0 +1,17 @@
+@import "../../variables.scss";
+
+.ExcersiseSet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    font-family: roboto;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 8px;
+    color: $primary-color;
+  }
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./ExcersiseList.module.css";
+import classes from "./ExcersiseList.module.scss";
 
 type Props = {
   excersises: string[];

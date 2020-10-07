@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./NumberInput.module.css";
+import classes from "./NumberInput.module.scss";
 
 type Props = {
   label: string;

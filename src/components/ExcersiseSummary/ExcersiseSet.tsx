@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./ExcersiseSet.module.css";
+import classes from "./ExcersiseSet.module.scss";
 
 type Props = {
   setNumber: number;

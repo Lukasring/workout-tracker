@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ExcersiseSet from "./ExcersiseSet";
 import NumberInput from "../UI/NumberInput/NumberInput";
-import classes from "./ExcersiseCard.module.css";
+import classes from "./ExcersiseCard.module.scss";
 
 const WEIGHT_CHANGE = 2.5;
 const REPS_CHANGE = 1;

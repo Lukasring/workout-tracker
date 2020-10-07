@@ -1,0 +1,26 @@
+@import "../../variables.scss";
+
+.ExcersiseCard {
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  margin: 8px auto;
+  border-bottom: 3px solid $primary-color;
+  border-radius: 8px;
+}
+
+.AddSetButton {
+  font-size: 1rem;
+  font-weight: bold;
+  border: 2px solid $primary-color;
+  padding: 0.5rem;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-color: #fff;
+
+  &:hover,
+  &:active {
+    background-color: $primary-color-hover;
+    cursor: pointer;
+  }
+}

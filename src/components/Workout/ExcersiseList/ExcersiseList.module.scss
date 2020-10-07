@@ -1,0 +1,19 @@
+@import "../../../variables.scss";
+
+.ExcersiseList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    margin: 0;
+    padding: 12px;
+    border-bottom: 2px solid $primary-color;
+    border-radius: 8px;
+
+    &:hover,
+    &:active {
+      background-color: $primary-color-hover;
+    }
+  }
+}
