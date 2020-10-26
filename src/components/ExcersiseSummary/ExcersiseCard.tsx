@@ -11,7 +11,11 @@ type ExcersiseSet = {
   reps: number;
 };
 
-const ExcersiseCard: React.FC = () => {
+type Props = {
+  excersiseName: string;
+};
+
+const ExcersiseCard: React.FC<Props> = (props) => {
   const [weight, setWeight] = useState(0);
   const [reps, setReps] = useState(0);
   const [excersiseSets, setExcersiseSet] = useState<ExcersiseSet[]>([]);
@@ -28,10 +32,10 @@ const ExcersiseCard: React.FC = () => {
     }
   };
 
-  const incrementReps = () => setReps(reps + REPS_CHANGE);
+  const incrementReps = () => setReps((prevReps) => prevReps + REPS_CHANGE);
   const decrementReps = () => {
     if (reps - REPS_CHANGE >= 0) {
-      setReps(reps - REPS_CHANGE);
+      setReps((prevReps) => prevReps - REPS_CHANGE);
     }
   };
   const repsChangeHandler = (event: React.FormEvent<HTMLInputElement>) => {
@@ -53,7 +57,7 @@ const ExcersiseCard: React.FC = () => {
 
   return (
     <div className={classes.ExcersiseCard}>
-      <h2>Excersise Name</h2>
+      <h2>{props.excersiseName}</h2>
       <NumberInput
         label="Weight"
         value={weight}

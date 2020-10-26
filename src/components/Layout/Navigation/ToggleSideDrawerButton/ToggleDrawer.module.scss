@@ -1,0 +1,31 @@
+@import "../../../../variables.scss";
+
+.DrawerToggle {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  &:hover div {
+    background-color: $primary-color-hover;
+  }
+}
+
+.DrawerToggle div {
+  width: 90%;
+  height: 3px;
+  background-color: $primary-color;
+}
+
+@media (min-width: 500px) {
+  .DrawerToggle {
+    display: none;
+  }
+}

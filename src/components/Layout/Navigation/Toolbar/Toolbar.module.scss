@@ -1,0 +1,36 @@
+@import "../../../../variables.scss";
+
+.Header {
+  box-sizing: border-box;
+  background-color: $primary-color;
+  display: flex;
+}
+
+.HeaderText {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: -1px -1px 3px #000000, 1px 1px 3px #000000;
+  right: 50%;
+  transform: translateX(50%);
+  width: 100%;
+  font-family: "Staatliches", cursive;
+  text-align: center;
+  color: $primary-color-hover;
+  @media (min-width: $breakpoint-desktop) {
+    transform: translateX(80%);
+  }
+  @media (min-width: 800px) {
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
+
+.Toolbar {
+  display: none;
+  @media (min-width: $breakpoint-desktop) {
+    display: flex;
+    width: 100%;
+  }
+}
